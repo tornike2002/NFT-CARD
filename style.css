@@ -1,125 +1,160 @@
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
-:root{
-    --cardColor: #15263F;
-    --bodyColor: #0D192C;
-    --titleColor: #FFFFFF;
-    --descriptionColor: #8BACD9;
-    --ethColor: #00FFF8;
+:root {
+  --cardColor: #15263f;
+  --bodyColor: #0d192c;
+  --titleColor: #ffffff;
+  --descriptionColor: #8bacd9;
+  --ethColor: #00fff8;
 }
-body{
-    background-color: var(--bodyColor);
+body {
+  background-color: var(--bodyColor);
 }
-.container{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.card{
-    background-color: var(--cardColor);
-    max-width: 350px;
-    min-height: 576px;
-    border-radius: 15px;
-    box-shadow: 0px 25px 50px 0px #000000;
+.card {
+  background-color: var(--cardColor);
+  max-width: 350px;
+  min-height: 576px;
+  border-radius: 15px;
+  box-shadow: 0px 25px 50px 0px #000000;
 }
-.nft-image img{
-   min-height: 302px;
-   max-width: 302px;
-   border-radius: 8px;
+.nft-image img {
+max-width: 100%;
+max-height: 100%;
+border-radius: 8px;
+}
+.nft-image {
+  background-color: #00fff8;
+  border-radius: 9px;
+  max-height: 301px;
+  max-width: 100%;
+}
+.nft{
+     transition: all 2s;
+}
+.nft:hover {
+    overflow: hidden;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  border-radius: 8px;
+
 }
 
-.card-container{
-    padding-top: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
+
+.nft-image{
+    position: relative;
 }
-.text-description h1{
-    color: var(--titleColor);
-    padding-top: 14px;
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 28px;
+.nft-view{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.text-description p{
-    color: var(--descriptionColor);
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 26px;
-    padding-top: 8px;
+.card-container {
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
-.eth-days{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 18px;
+.text-description h1 {
+  color: var(--titleColor);
+  padding-top: 14px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  transition: all 1s ease;
 }
-.etherium{
-    display: flex;
-    color: var(--ethColor);
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    
+.text-description h1:hover {
+    color: #00fff8;
+}
+.text-description p {
+  color: var(--descriptionColor);
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 8px;
+}
+.eth-days {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+}
+.etherium {
+  display: flex;
+  color: var(--ethColor);
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
 }
 .etherium p {
-    padding-left: 6px;
+  padding-left: 6px;
 }
 .days p {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: var(--descriptionColor);
-    padding-left: 9px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--descriptionColor);
+  padding-left: 9px;
 }
-.days{
-    display: flex;
+.days {
+  display: flex;
 }
 
-.line{
-    margin-top: 24px;
-    background-color: #2E405A;
-    border: none;
-    height: 1px;
+.line {
+  margin-top: 24px;
+  background-color: #2e405a;
+  border: none;
+  height: 1px;
 }
-.user-side{
-    margin-top: 16px;
-    display: flex;
-    align-items: center;
+.user-side {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
 }
-.user-side img{
-    width: 33px;
-    height: 33px;
-    border: 1px solid #FFFFFF;
-    border-radius: 50%;
+.user-side img {
+  width: 33px;
+  height: 33px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
 }
-.user-side p:nth-child(2){
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: var(--descriptionColor);
-    padding-left: 16px;
-    padding-right: 8px;
+.user-side p:nth-child(2) {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--descriptionColor);
+  padding-left: 16px;
+  padding-right: 8px;
 }
-.user-side p:nth-child(3){
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: var(--titleColor);
+.user-side p:nth-child(3) {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--titleColor);
+  transition: all 1s ease;
+}
+
+.user-side p:nth-child(3):hover {
+    color: #00fff8;
 }
