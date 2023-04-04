@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cardColor: #15263F;
+    --bodyColor: #0D192C;
+    --titleColor: #FFFFFF;
+    --descriptionColor: #8BACD9;
+    --ethColor: #00FFF8;
+}
+body{
+    background-color: var(--bodyColor);
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: var(--cardColor);
+    max-width: 350px;
+    min-height: 576px;
+    border-radius: 15px;
+    box-shadow: 0px 25px 50px 0px #000000;
+}
+.nft-image img{
+   min-height: 302px;
+   max-width: 302px;
+   border-radius: 8px;
+}
+
+.card-container{
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.text-description h1{
+    color: var(--titleColor);
+    padding-top: 14px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+}
+.text-description p{
+    color: var(--descriptionColor);
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    padding-top: 8px;
+}
+.eth-days{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 18px;
+}
+.etherium{
+    display: flex;
+    color: var(--ethColor);
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+.etherium p {
+    padding-left: 6px;
+}
+.days p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--descriptionColor);
+    padding-left: 9px;
+}
+.days{
+    display: flex;
+}
+
+.line{
+    margin-top: 24px;
+    background-color: #2E405A;
+    border: none;
+    height: 1px;
+}
+.user-side{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+.user-side img{
+    width: 33px;
+    height: 33px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+.user-side p:nth-child(2){
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--descriptionColor);
+    padding-left: 16px;
+    padding-right: 8px;
+}
+.user-side p:nth-child(3){
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--titleColor);
+}
